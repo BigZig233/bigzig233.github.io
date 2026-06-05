@@ -521,6 +521,61 @@ a.pl-db-row:hover .pl-db-name {
   margin: 20px 0 !important;
 }
 
+.navbar.top {
+  position: static !important;
+  margin: 0 0 20px !important;
+}
+
+.navbar.top .navbar-blur,
+.navbar.top .navbar-container {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.navbar.top .navbar-blur {
+  margin: 0 !important;
+}
+
+.navbar.top .navbar-blur::before,
+.navbar.top .navbar-blur::after {
+  content: none !important;
+  display: none !important;
+}
+
+.navbar.top .navbar-container {
+  margin: 0 !important;
+  overflow: visible !important;
+}
+
+.navbar.top nav {
+  display: flex;
+  gap: 18px;
+  padding: 0 0 12px !important;
+  border-bottom: 1px solid var(--pl-line-soft);
+  overflow-x: auto;
+}
+
+.navbar.top nav a {
+  flex: 0 0 auto;
+  padding: 0 0 8px !important;
+  color: var(--pl-muted) !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+.navbar.top nav a.active,
+.navbar.top nav a:hover {
+  color: var(--pl-cyan) !important;
+  border-bottom: 1px solid var(--pl-cyan) !important;
+}
+
 .post-list .post-card {
   margin: 0 !important;
   padding: 22px 0 !important;
