@@ -75,6 +75,12 @@ body::after {
   padding: 0 28px !important;
 }
 
+.l_body:has(.pl-workspace) .l_left,
+.l_body:has(.pl-workspace) .l_right,
+.l_body:has(.pl-workspace) .float-panel {
+  display: none !important;
+}
+
 .l_body .l_right,
 .l_body .l_right .widgets {
   display: none !important;
@@ -156,11 +162,18 @@ body::after {
   text-transform: uppercase;
 }
 
+.l_left .widget-wrapper.markdown,
+.l_left .widget-wrapper.recent,
+.l_left .widget-wrapper.doc-tree {
+  display: none !important;
+}
+
 .l_main {
   padding-top: 58px;
 }
 
 .l_body:has(.pl-workspace) .l_main {
+  max-width: 100%;
   padding-top: 22px;
 }
 
@@ -286,10 +299,7 @@ body::after {
 }
 
 .pl-section-head {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 24px;
+  display: block;
   margin-bottom: 18px;
 }
 
@@ -564,6 +574,10 @@ a.pl-db-row:hover .pl-db-name {
   }
 
   .l_body .l_left {
+    display: none !important;
+  }
+
+  .l_body .float-panel {
     display: none !important;
   }
 
