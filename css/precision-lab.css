@@ -564,16 +564,33 @@ a.pl-db-row:hover .pl-db-name {
   padding: 0 0 8px !important;
   color: var(--pl-muted) !important;
   background: transparent !important;
+  background-color: transparent !important;
   border: 0 !important;
   border-radius: 0 !important;
   box-shadow: none !important;
   text-shadow: none !important;
+  filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
 .navbar.top nav a.active,
 .navbar.top nav a:hover {
   color: var(--pl-cyan) !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
   border-bottom: 1px solid var(--pl-cyan) !important;
+}
+
+.navbar.top nav a.active::after,
+.navbar.top nav a:hover::after {
+  content: none !important;
+  display: none !important;
 }
 
 .post-list .post-card {
